@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ITDEV 160 Project 1</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="titles">ITDEV 160 Project 1 - TimeGetter</h1>
+        <div class="content" id="instruct">
+            <img src="img/clock.jpg" />
+            <div>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Move your cursor to the GET TIME button</li>
+                    <li>Ready yourself for the click</li>
+                    <li>CLICK. THAT. BUTTON!</li>
+                </ol>
+                <p>People who press the button are guaranteed<br>the most accurate time JavaScript can offer!</p>
+            </div>
+        </div>
+        <div class="content" id="timebox">
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hour</th>
+                    <th>Minute</th>
+                    <th>Second</th>
+                    <th>AM/PM</th>
+                </tr>
+                <tr>
+                    <td id="days"></td>
+                    <td id="hours"></td>
+                    <td id="minutes"></td>
+                    <td id="seconds"></td>
+                    <td id="ampm"></td>
+                </tr>
+            </table>
+            <!-- I used a button instead of an <a> because I'm calling a js function-->
+            <button onclick="updateTime()">GET TIME</button>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
